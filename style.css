@@ -235,6 +235,11 @@ p{
   text-align: center;
 }
 
+.negrita:hover{
+  background-color: #222121;
+  transition: transform 0.3s ease;
+}
+
 /*ANIMACION CARRUSEL*/
 /* Estilos por defecto para móviles o pantallas pequeñas */
 .contenedor-presentacion {
@@ -414,6 +419,42 @@ scroll-margin : 3rem;
   }
 }
 
+@media (max-width: 768px) {
+  .container-servicios {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .servicio {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .servicio h3,
+  .servicio p {
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .servicio h3,
+  .servicio p {
+    width: 100%;
+  }
+}
+
 .iconos {
   width: 5rem;
 }
@@ -428,6 +469,10 @@ scroll-margin : 3rem;
   justify-content: center;
   align-items: center;
 }
+
+
+
+
 
 /* pie de la pagina, osea texto debajo de todo */
 footer {
