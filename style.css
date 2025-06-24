@@ -470,8 +470,15 @@ scroll-margin : 3rem;
   align-items: center;
 }
 
+#code{
+  background-color: #2d2c2c;
+  border-radius: 10px 10px 60px 10px;
+}
 
-
+#code > p {
+  color :#ffffff;
+  font-family: 'Inconsolata'
+}
 
 
 /* pie de la pagina, osea texto debajo de todo */

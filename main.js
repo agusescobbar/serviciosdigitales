@@ -23,7 +23,7 @@ gsap.from(logo,{
 })
 
 gsap.from("li", {
-  y: -100,
+  y: -60,
   duration: 2,
   delay: 0.5,
   rotate : 25,
