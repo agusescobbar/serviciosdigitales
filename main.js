@@ -11,3 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+let logo = document.querySelector(".logo");
+
+gsap.from(logo,{
+  x : -200,
+  rotate : 90,
+  duration : 2,
+  delay : 0.5,
+  ease : "back.out"
+})
+
+gsap.from("li", {
+  y: -100,
+  duration: 2,
+  delay: 0.5,
+  rotate : 25,
+  ease: "back.out"
+})
