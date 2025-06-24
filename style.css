@@ -207,9 +207,10 @@ p{
   object-fit: contain;
 }
 
-.carrusel-item:hover {
+/*.carrusel-item:hover {
   transform: scale(1.05);
 }
+*/
 
 @keyframes scroll {
   0% {
@@ -233,11 +234,6 @@ p{
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-align: center;
-}
-
-.negrita:hover{
-  background-color: #222121;
-  transition: transform 0.3s ease;
 }
 
 /*ANIMACION CARRUSEL*/
