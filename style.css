@@ -1,5 +1,5 @@
 
-/* ESTE CODIGO Y EL CSS ESTA HECHO POR @AGUSESCOBBAR, es un spagetti pero funciona :p */
+/* ESTE CODIGO Y EL html+js ESTA HECHO POR @AGUSESCOBBAR, es un spagetti pero funciona :p */
 * {
   margin: 0;
   padding: 0;
@@ -341,7 +341,6 @@ scroll-margin : 3rem;
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
 }
 
 /* Títulos */
