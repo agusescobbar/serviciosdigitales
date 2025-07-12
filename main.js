@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let logo = document.querySelector(".logo");
+const text = new SplitType('#serviciosTitulo', {types: 'chars'});
+
 
 
 gsap.from(logo,{
@@ -49,9 +51,39 @@ gsap.from(".servicio",{
   scrollTrigger: ".servicio",
   })
 
-gsap.from(".container-contenido",{
+gsap.from("#heading",{
   y: 150,
   opacity: 0,
   duration: 1,
+  scrollTrigger: "#heading",
+  })
+
+gsap.from(".container-contenido",{
+  y: 150,
+  opacity: 0,
+  duration: 2,
   scrollTrigger: ".container-contenido",
   })
+
+
+//animacion del titulo principal
+text.chars.forEach((char,index) => {
+    
+    let charst = gsap.timeline();
+    
+    
+    charst.from(char, {
+        y: gsap.utils.random(-150,150),
+        x: gsap.utils.random(-250,250),
+        rotate: gsap.utils.random(-180,180),
+        scale: gsap.utils.random(-1,2),
+        opacity: 0,
+        duration: 1.5 ,
+        ease: "back.out",
+        delay : index * 0.01
+    })
+    charst.from(char, {
+        color: `rgb(${gsap.utils.random(0,255)}, ${gsap.utils.random(0,255)}, ${gsap.utils.random(0,255)})`,
+        duration: 0.1,
+    }, "-=.2")
+  });
